@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const res = await fetch("https://script.google.com/macros/s/AKfycbyIZ0ySryCj-5LE-xdBzdSF6gClBbbnMn2xor0s7Qui8NEpOjitX17tHuO1-aU-irKA/exec", {
+      const res = await fetch("https://script.google.com/macros/s/AKfycbzjPadsqe6ooq1KJ4842WWzoBh0ElPOR0GewT2IWIHbUANtMNNmePPXnrp4Lg8DMPaB/exec", {
         method: "POST",
         body: JSON.stringify(payload)
       });
@@ -102,3 +102,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
