@@ -1,0 +1,195 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Robo Football League – Registration Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HERO SECTION -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Robo Football League 2025</h1>
+        <p>Precision. Strategy. Engineering. Let your robots take the field.</p>
+        <a href="#registration" class="btn-primary">Register Your Team</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <h2>About the Event</h2>
+        <p>
+          Robo Football League is a competitive robotics event where teams design, build, and control
+          robots to play football in a dynamic arena. Participants can compete in Singles or Doubles
+          categories, each requiring teamwork, engineering skill, and strategic gameplay.
+        </p>
+      </section>
+
+      <!-- CATEGORIES -->
+      <section class="section" id="categories">
+        <h2>Event Categories</h2>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>Singles</h3>
+            <p>
+              • 3 members per team<br>
+              • 1 robot per team<br>
+              • 3 vs 3 match format
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Doubles</h3>
+            <p>
+              • 6 members per team<br>
+              • 2 robots (Goalkeeper + Striker)<br>
+              • 6 vs 6 match format
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RULES & FEES -->
+      <section class="section" id="rules">
+        <h2>Rules & Registration Fee</h2>
+        <p>
+          Ensure your robot adheres to the event guidelines. Violations may result in disqualification.
+        </p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Fee per Participant</th>
+                <th>Team Size</th>
+                <th>Total Team Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Singles</td>
+                <td>₹200</td>
+                <td>3</td>
+                <td>₹600</td>
+              </tr>
+              <tr>
+                <td>Doubles</td>
+                <td>₹200</td>
+                <td>6</td>
+                <td>₹1200</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- REGISTRATION FORM -->
+      <section class="section" id="registration">
+        <h2>Team Registration</h2>
+        <p>Fill in the details carefully. A confirmation email will be sent to the team leader.</p>
+
+        <form id="registrationForm">
+          <!-- Team info -->
+          <div class="form-group">
+            <label for="teamName">Team Name</label>
+            <input type="text" id="teamName" name="teamName" required />
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+              <option value="">Select category</option>
+              <option value="Singles">Singles (3 members)</option>
+              <option value="Doubles">Doubles (6 members)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="leaderPhone">Team Leader Phone</label>
+            <input type="tel" id="leaderPhone" name="leaderPhone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="leaderEmail">Team Leader Email</label>
+            <input type="email" id="leaderEmail" name="leaderEmail" required />
+          </div>
+
+          <!-- Participants -->
+          <h3>Participants</h3>
+          <p>Enter details for each team member. SUC Code must be exactly 10 characters.</p>
+
+          <div id="participantsContainer">
+            <!-- 6 participant blocks (JS will show/hide) -->
+            <!-- Template repeated -->
+            <script>
+              for (let i = 1; i <= 6; i++) {
+                document.write(`
+                  <div class="participant" data-index="${i}">
+                    <h4>Member ${i}</h4>
+                    <div class="form-group-inline">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" id="member${i}Name" name="member${i}Name" />
+                      </div>
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="member${i}Email" name="member${i}Email" />
+                      </div>
+                      <div class="form-group">
+                        <label>SUC Code</label>
+                        <input type="text" id="member${i}SUC" name="member${i}SUC" maxlength="10" minlength="10" />
+                      </div>
+                    </div>
+                  </div>
+                `);
+              }
+            </script>
+          </div>
+
+          
+          <div class="form-group">
+            <label for="teamName">College Branch</label>
+            <input type="text" id="collegeBranch" name="collegeBranch" required />
+          </div>
+
+          <div class="form-group">
+            <label for="teamName">City</label>
+            <input type="text" id="city" name="collegeBranch" required />
+          </div>
+
+          <button type="submit" class="btn-primary">Submit Registration</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>For queries, reach out to the event coordinators:</p>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>Rahul Verma</h3>
+            <p>Event Coordinator<br>Phone: +91 98765 43210<br>Email: rahul.verma@college.edu</p>
+          </div>
+
+          <div class="card">
+            <h3>Ananya Rao</h3>
+            <p>Technical Lead<br>Phone: +91 91234 56789<br>Email: ananya.rao@college.edu</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Robo Football League · Department of Robotics & AI</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
