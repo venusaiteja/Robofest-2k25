@@ -1,3 +1,4 @@
+/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,16 +12,32 @@ body {
   line-height: 1.6;
 }
 
+/* HERO SECTION */
 .hero {
   min-height: 50vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: radial-gradient(circle at top, #1f2937, #020617);
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
+/* Centered Logo */
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main-logo {
+  width: 180px;
+  height: auto;
+}
+
+/* HERO TEXT */
 .hero-content h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
@@ -31,6 +48,7 @@ body {
   color: #cbd5f5;
 }
 
+/* BUTTON */
 .btn-primary {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -50,6 +68,7 @@ body {
   transform: translateY(-1px);
 }
 
+/* MAIN CONTENT */
 main {
   max-width: 960px;
   margin: 0 auto;
@@ -69,6 +88,7 @@ main {
   color: #d1d5db;
 }
 
+/* GRID */
 .card-grid {
   display: grid;
   gap: 1.5rem;
@@ -83,6 +103,7 @@ main {
   border: 1px solid #1f2937;
 }
 
+/* TABLE */
 .table-wrapper {
   overflow-x: auto;
   margin-top: 1rem;
@@ -107,6 +128,7 @@ th {
   background: #0b1120;
 }
 
+/* FORM */
 form {
   margin-top: 1.5rem;
   background: #020617;
@@ -147,6 +169,7 @@ form {
   gap: 0.75rem;
 }
 
+/* PARTICIPANT BOX */
 .participant {
   margin: 1.25rem 0;
   padding: 1rem;
@@ -159,99 +182,32 @@ form {
   margin-bottom: 0.75rem;
 }
 
+/* FORM STATUS TEXT */
 .form-status {
   margin-top: 0.75rem;
   min-height: 1.2em;
   font-size: 0.9rem;
 }
 
+/* FOOTER */
 .footer {
   padding: 1rem;
   text-align: center;
   border-top: 1px solid #1f2937;
   color: #9ca3af;
-
 }
 
-.site-logo {
-  width: 280px;
-  height: auto;
-  position: absolute;
-  top: 40px;
-  left: 80px;
-  z-index: 10;
-}
-
-.site-logo-right {
-  width: 280px;   /* adjust size as needed */
-  height: auto;
-  position: absolute;
-  top: 40px;
-  right: 80px;   /* this places it on the right */
-  z-index: 10;
-}
-
-.hero {
-  position: relative;
-  padding-top: 120px; /* Creates space so logos don’t overlap text */
-}
-
-/* Mobile layout fix */
-@media (max-width: 600px) {
-  .hero {
-    padding-top: 150px; /* Push heading down so it doesn't overlap */
-    text-align: center;
-  }
-
-  .site-logo {
-    position: static;   /* Remove absolute position on mobile */
-    display: block;
-    margin: 15px auto 0 auto;
-    width: 80px;        /* Slightly smaller logo for mobile */
-  }
-}
-
-/* Logo Styling */
-.logo-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.main-logo {
-  width: 180px;
-  height: auto;
-}
-
-/* Logo Styling */
-.logo-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.main-logo {
-  width: 180px;
-  height: auto;
-}
-
-/* On mobile: larger space above heading */
+/* MOBILE FIXES */
 @media (max-width: 600px) {
   .main-logo {
-    width: 160px;
+    width: 150px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
   }
 
   .hero {
-    padding-top: 20px;
-    text-align: center;
-    flex-direction: column;
+    padding-top: 1rem;
   }
 }
-
-
-
-
-
-
