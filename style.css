@@ -190,3 +190,10 @@ form {
   right: 80px;   /* this places it on the right */
   z-index: 10;
 }
+
+.hero {
+  position: relative;
+  padding-top: 120px; /* Creates space so logos don’t overlap text */
+}
+
+
