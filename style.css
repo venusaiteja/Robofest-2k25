@@ -170,4 +170,23 @@ form {
   text-align: center;
   border-top: 1px solid #1f2937;
   color: #9ca3af;
+
+}
+
+.site-logo {
+  width: 280px;
+  height: auto;
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  z-index: 10;
+}
+
+.site-logo-right {
+  width: 280px;   /* adjust size as needed */
+  height: auto;
+  position: absolute;
+  top: 40px;
+  right: 80px;   /* this places it on the right */
+  z-index: 10;
 }
