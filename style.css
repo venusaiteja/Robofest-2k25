@@ -224,6 +224,33 @@ form {
   height: auto;
 }
 
+/* Logo Styling */
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main-logo {
+  width: 180px;
+  height: auto;
+}
+
+/* On mobile: larger space above heading */
+@media (max-width: 600px) {
+  .main-logo {
+    width: 160px;
+  }
+
+  .hero {
+    padding-top: 20px;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+
 
 
 
