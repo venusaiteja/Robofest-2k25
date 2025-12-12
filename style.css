@@ -196,4 +196,20 @@ form {
   padding-top: 120px; /* Creates space so logos don’t overlap text */
 }
 
+/* Mobile layout fix */
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 150px; /* Push heading down so it doesn't overlap */
+    text-align: center;
+  }
+
+  .site-logo {
+    position: static;   /* Remove absolute position on mobile */
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 80px;        /* Slightly smaller logo for mobile */
+  }
+}
+
+
 
