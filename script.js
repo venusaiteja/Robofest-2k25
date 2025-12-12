@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       teamName: formData.get("teamName"),
       category: category,
       leaderPhone: formData.get("leaderPhone"),
+      alterPhone: formData.get("alterPhone"),
       leaderEmail: formData.get("leaderEmail"),
       collegeBranch: formData.get("collegeBranch"),
       city: formData.get("city"),
@@ -102,6 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
 
 
 
