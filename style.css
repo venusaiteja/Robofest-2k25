@@ -104,6 +104,7 @@ main {
   border-radius: 1.75rem;
   padding: 1.25rem;
   border: 1px solid #22c55e;
+  border-width: 2px;
 }
 
 /* TABLE */
@@ -121,7 +122,8 @@ table {
   background: #020617;
   border-radius: 0.5rem;
   overflow: hidden;
-  border-color: #22c55e;
+  border-color: #22c55e
+  border-width:2px;
 
 }
 
@@ -144,7 +146,8 @@ form {
   padding: 1.5rem;
   border: 1px solid #1f2937;
   border-color: #FFA500;
-  border-width: 2px;}
+  border-width: 2px;
+}
 
 .form-group {
   margin-bottom: 1rem;
@@ -187,7 +190,7 @@ form {
   background: #020617;
   border: 1px dashed #374151;
   border-color: #22c55e;
-   border-width: 2px;
+  border-width: 2px;
 }
 
 .participant h4 {
@@ -223,6 +226,7 @@ form {
     padding-top: 1rem;
   }
 }
+
 
 
 
